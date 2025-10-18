@@ -1,9 +1,9 @@
 # Striver's A2Z DSA Sheet - GFG Solutions 📚
 
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions?style=social)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions?style=social)
-![GitHub repo size](https://img.shields.io/github/repo-size/YOUR_USERNAME/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions)
-![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions)
+![GitHub stars](https://img.shields.io/github/stars/sairajeshkadali/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions?style=social)
+![GitHub forks](https://img.shields.io/github/forks/sairajeshkadali/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/sairajeshkadali/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions)
+![GitHub license](https://img.shields.io/github/license/sairajeshkadali/Strivers_A2Z_DSA_Code_Sheet_GFG_Solutions)
 
 Welcome to my personal collection of Data Structures and Algorithms solutions! This repository contains my completed solutions for every problem listed on the renowned **Striver's A2Z DSA Sheet**, with all problems sourced from the **GeeksforGeeks (GFG)** platform.
 
