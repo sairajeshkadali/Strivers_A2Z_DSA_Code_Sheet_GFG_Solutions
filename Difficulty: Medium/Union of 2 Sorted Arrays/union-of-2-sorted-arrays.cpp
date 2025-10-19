@@ -3,28 +3,39 @@ class Solution {
     vector<int> findUnion(vector<int> &a, vector<int> &b) {
         int n = a.size(), m = b.size();
         int i = 0, j = 0;
-        set<int> Union;
+        vector<int> Union;
         while (i < n && j < m)
         {
             if (a[i] == b[j])
             {
-                Union.insert(a[i]);
+                if(Union.empty() || Union.back() != a[i])
+                    Union.emplace_back(a[i]);
                 i++;
                 j++;
             }
             else if (a[i] < b[j])
             {
-                Union.insert(a[i++]);
+                if(Union.empty() || Union.back() != a[i])
+                    Union.emplace_back(a[i]);
+                i++;
             }
             else
             {
-                Union.insert(b[j++]);
+                if(Union.empty() || Union.back() != b[j])
+                    Union.emplace_back(b[j]);
+                j++;
             }
         }
-        while (i < n)
-            Union.insert(a[i++]);
-        while (j < m)
-            Union.insert(b[j++]);
-        return vector<int> (Union.begin(), Union.end());
+        while (i < n){
+            if(Union.empty() || Union.back() != a[i])
+                Union.emplace_back(a[i]);
+            i++;
+        }
+        while (j < m){
+            if(Union.empty() || Union.back() != b[j])
+                Union.emplace_back(b[j]);
+            j++;
+        }
+        return Union;
     }
 };
