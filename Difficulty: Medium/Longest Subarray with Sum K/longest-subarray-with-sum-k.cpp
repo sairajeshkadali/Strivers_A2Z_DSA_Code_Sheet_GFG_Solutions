@@ -1,21 +1,23 @@
 class Solution {
   public:
     int longestSubarray(vector<int>& arr, int k) {
-        unordered_map<long long, int> preSumMap;
-        int n = arr.size(), maxLen = 0;
+        int maxSubArr = 0, n = arr.size();
         long long sum = 0;
+        unordered_map<long long, int> hash;
         for (int i = 0; i < n; i++)
         {
             sum += arr[i];
             if(sum == k){
-                maxLen = max(maxLen, i + 1);
+                maxSubArr = max(maxSubArr, i + 1);
             }
-            if(preSumMap.find(sum - k) != preSumMap.end()){
-                maxLen = max(maxLen, i - preSumMap[sum - k]);
+            long long rem = sum - k;
+            if(hash.find(rem) != hash.end()){
+                int len = i - hash[rem];
+                maxSubArr = max(maxSubArr, len);
             }
-            if(preSumMap.find(sum) == preSumMap.end())
-                preSumMap[sum] = i;
+            if(hash.find(sum) == hash.end())
+                hash[sum] = i;
         }
-        return maxLen;
+        return maxSubArr;
     }
 };
